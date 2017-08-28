@@ -5,12 +5,12 @@ import { BigchainRepository } from '../data-access-adapter/bigchaindb/bigchain.r
 
 export class BigchainExampleWorker implements IStartup {
     private repository: IBigchainRepository<ExampleEntity> = new BigchainRepository<ExampleEntity>();
-    name: string = 'BigchainExampleWorker';
+    name = 'BigchainExampleWorker';
 
     Run(): Promise<any> {
         return new Promise((resolve, reject) => {
             this.addBlock()
-                .then(resolve); 
+                .then(resolve);
         });
     }
 

@@ -1,5 +1,5 @@
 import { IEntity } from '../entity';
-import * as driver from 'bigchaindb-driver'; 
+import * as driver from 'bigchaindb-driver';
 import { Env } from '../../infrastructure/env';
 import { IRepository } from '../repository.interface';
 import { IBigchainRepository } from './bigchain.interface';
